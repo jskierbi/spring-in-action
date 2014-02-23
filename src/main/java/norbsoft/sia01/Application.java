@@ -11,6 +11,7 @@ public class Application {
 		Performer performer = (Performer) context.getBean("duke");
 		Performer poemPerformer = (Performer) context.getBean("poeticDuke");
 		Performer poemPerformer2 = (Performer) context.getBean("poeticDuke2");
+		Performer instumentalistKenny = (Performer) context.getBean("kenny");
 		Stage stage = (Stage) context.getBean("theStage");
 
 		Ticket ticket1 = (Ticket) context.getBean("ticket");
@@ -31,6 +32,7 @@ public class Application {
 			performer.doPerform();
 			poemPerformer.doPerform();
 			poemPerformer2.doPerform();
+			instumentalistKenny.doPerform();
 			stage.curtainsDown();
 		} catch (PerformanceException e) {
 			e.printStackTrace();
