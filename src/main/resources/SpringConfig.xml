@@ -31,4 +31,10 @@
           class="norbsoft.sia01.Ticket"
           scope="prototype"/>
 
+    <bean id="kenny"
+          class="norbsoft.sia01.Instrumentalist">
+<property name="song" value="Jingle bells"/>
+        <property name=""
+    </bean>
+
 </beans>
