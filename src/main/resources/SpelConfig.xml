@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+			http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="piano"
+          class="norbsoft.sia01.domain.impl.Piano" />
+
+    <bean id="saxophone"
+          class="norbsoft.sia01.domain.impl.Saxophone" />
+
+    <bean id="kenny"
+          class="norbsoft.sia01.domain.impl.Instrumentalist"
+          p:instrument-ref="piano"
+          p:song="Passed-by song name" />
+
+    <bean id="carl"
+          class="norbsoft.sia01.domain.impl.Instrumentalist"
+          p:instrument-ref="saxophone"
+          p:song="#{kenny.song}" />
+
+    <bean id="rocksongs"
+          class="norbsoft.sia01.domain.impl.RockSongSelector" />
+
+    <bean id="song1"
+          class="norbsoft.sia01.domain.impl.Instrumentalist"
+          p:instrument-ref="piano"
+          p:song="#{rocksongs.selectSong()?.toUpperCase()?:'Hmm, null song...'}"/>
+
+    <bean id="song2"
+          class="norbsoft.sia01.domain.impl.Instrumentalist"
+          p:instrument-ref="piano"
+          p:song="#{rocksongs.selectSong()?.toUpperCase()?:'Hmm, null song...'}"/>
+
+    <bean id="song3"
+          class="norbsoft.sia01.domain.impl.Instrumentalist"
+          p:instrument-ref="piano"
+          p:song="#{rocksongs.selectSong()?.toUpperCase()?:'Hmm, null song...'}"/>
+
+    <bean id="song4"
+          class="norbsoft.sia01.domain.impl.Instrumentalist"
+          p:instrument-ref="piano"
+          p:song="#{rocksongs.selectSong()?.toUpperCase()?:'Hmm, null song...'}"/>
+
+</beans>
