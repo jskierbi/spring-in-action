@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="sonnet29"
+          class="norbsoft.sia01.domain.impl.Sonnet29"/>
+
+    <bean id="duke"
+          class="norbsoft.sia01.domain.impl.Juggler">
+        <constructor-arg value="10"/>
+    </bean>
+
+    <bean id="poeticDuke"
+          class="norbsoft.sia01.domain.impl.PoeticJuggler">
+        <constructor-arg value="11"/>
+    </bean>
+
+    <bean id="poeticDuke2"
+          class="norbsoft.sia01.domain.impl.PoeticJuggler">
+        <constructor-arg value="23"/>
+        <constructor-arg ref="sonnet29"/>
+    </bean>
+
+    <bean id="theStage"
+          class="norbsoft.sia01.domain.impl.Stage"
+          factory-method="getInstance"/>
+
+    <bean id="ticket"
+          class="norbsoft.sia01.domain.impl.Ticket"
+          scope="prototype"/>
+
+    <bean id="saxophone"
+          class="norbsoft.sia01.domain.impl.Saxophone"/>
+
+    <bean id="piano"
+          class="norbsoft.sia01.domain.impl.Piano"
+          init-method="onInit"
+          destroy-method="onDestroy"/>
+
+    <bean id="guitar"
+          class="norbsoft.sia01.domain.impl.Guitar"/>
+
+    <bean id="kenny"
+          class="norbsoft.sia01.domain.impl.Instrumentalist"
+          p:song="Jingle bells"
+          p:instrument-ref="piano"/>
+
+    <bean id="hank"
+          class="norbsoft.sia01.domain.impl.OneManBand">
+        <property name="instrumentCollection">
+            <list>
+                <ref bean="saxophone"/>
+                <ref bean="piano"/>
+                <ref bean="guitar"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="hankMap"
+          class="norbsoft.sia01.domain.impl.OneManBandMapBased">
+        <property name="instrumentMap">
+            <map>
+                <entry key="Saxo" value-ref="saxophone"/>
+                <entry key="Piano" value-ref="piano"/>
+                <entry key="Guitar" value-ref="guitar"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="propsPerformer"
+          class="norbsoft.sia01.domain.impl.PropertiesPerformer">
+        <property name="properties">
+            <props>
+                <prop key="first-key">This is first key value</prop>
+                <prop key="Man-doo-line">Two-tee-ha</prop>
+                <prop key="Last:key!">Last key..</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>

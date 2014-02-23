@@ -2,7 +2,9 @@ package norbsoft.sia01.domain.impl;
 
 import norbsoft.sia01.domain.PerformanceException;
 import norbsoft.sia01.domain.Performer;
+import org.springframework.stereotype.Component;
 
+@Component("namedJuggler")
 public class Juggler implements Performer {
 
 	private int beanBags = 3;

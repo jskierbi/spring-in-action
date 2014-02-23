@@ -12,7 +12,8 @@ public class Application {
 	public static void main(String[] args) {
 
 		// domainStatic();
-		domainSpel();
+		// domainSpel();
+		annotationConfig();
 	}
 
 	private static void domainStatic() {
@@ -79,6 +80,22 @@ public class Application {
 			song3.doPerform();
 			System.out.println("=>>> Song4:");
 			song4.doPerform();
+		} catch (PerformanceException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private static void annotationConfig() {
+
+		ApplicationContext context = new ClassPathXmlApplicationContext("AnnotationConfig.xml");
+		Performer juggler = (Performer) context.getBean("namedJuggler");
+		Performer instrumentalist = (Performer) context.getBean(Instrumentalist.class);
+
+		try {
+			System.out.println("=== JUGGLER PERFORMANCE ===");
+			juggler.doPerform();
+			System.out.println("=== INSTRUMENTALIST PERFORMANCE ===");
+			instrumentalist.doPerform();
 		} catch (PerformanceException e) {
 			e.printStackTrace();
 		}

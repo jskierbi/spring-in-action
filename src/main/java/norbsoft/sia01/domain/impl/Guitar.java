@@ -1,10 +1,9 @@
 package norbsoft.sia01.domain.impl;
 
 import norbsoft.sia01.domain.Instrument;
+import org.springframework.stereotype.Component;
 
-/**
- * Created by jakub on 02/23/2014.
- */
+@Component("guitar")
 public class Guitar implements Instrument {
 
 	@Override public void play() {
