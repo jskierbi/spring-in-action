@@ -25,7 +25,7 @@ public class Application {
 //		// JAVA only config
 //		domainStatic(new AnnotationConfigApplicationContext(Config.class));
 
-//		domainStatic(new ClassPathXmlApplicationContext("AspectConfig.xml"));
+		domainStatic(new ClassPathXmlApplicationContext("AspectConfig.xml"));
 		interceptMind();
 	}
 

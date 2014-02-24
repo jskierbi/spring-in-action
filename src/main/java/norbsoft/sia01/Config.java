@@ -4,10 +4,7 @@ import norbsoft.sia01.domain.Instrument;
 import norbsoft.sia01.domain.Performer;
 import norbsoft.sia01.domain.Poem;
 import norbsoft.sia01.domain.impl.*;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,6 +12,7 @@ import java.util.Properties;
 
 @Configuration
 @ComponentScan("norbsoft.sia01")
+@EnableAspectJAutoProxy
 public class Config {
 
 	@Bean
