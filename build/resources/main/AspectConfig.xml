@@ -20,24 +20,40 @@
                     expression="execution(* norbsoft.sia01.domain.Performer.doPerform(..))"/>
 
             <aop:around
-                pointcut-ref="performace"
-                method="watchPerformance"/>
+                    pointcut-ref="performace"
+                    method="watchPerformance"/>
 
             <!--<aop:before-->
-                    <!--pointcut-ref="performace"-->
-                    <!--method="takeSeats"/>-->
+            <!--pointcut-ref="performace"-->
+            <!--method="takeSeats"/>-->
 
             <!--<aop:before-->
-                    <!--pointcut-ref="performace"-->
-                    <!--method="turnOffCellPhones"/>-->
+            <!--pointcut-ref="performace"-->
+            <!--method="turnOffCellPhones"/>-->
 
             <!--<aop:after-returning-->
-                    <!--pointcut-ref="performace"-->
-                    <!--method="applaud"/>-->
+            <!--pointcut-ref="performace"-->
+            <!--method="applaud"/>-->
 
             <!--<aop:after-throwing-->
-                    <!--pointcut-ref="performace"-->
-                    <!--method="demandRefund"/>-->
+            <!--pointcut-ref="performace"-->
+            <!--method="demandRefund"/>-->
+
+        </aop:aspect>
+    </aop:config>
+
+    <aop:config>
+        <aop:aspect ref="magican">
+
+            <aop:pointcut
+                    id="thinking"
+                    expression="execution(* norbsoft.sia01.domain.ThinkingCreature.thinkOf(String))
+                                and args(thoughts)"/>
+
+            <aop:after
+                    pointcut-ref="thinking"
+                    method="readThoughts"
+                    arg-names="thoughts"/>
 
         </aop:aspect>
     </aop:config>

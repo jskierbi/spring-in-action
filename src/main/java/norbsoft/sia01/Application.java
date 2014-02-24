@@ -2,9 +2,9 @@ package norbsoft.sia01;
 
 import norbsoft.sia01.domain.PerformanceException;
 import norbsoft.sia01.domain.Performer;
+import norbsoft.sia01.domain.ThinkingCreature;
 import norbsoft.sia01.domain.TicketAlreadyValidatedException;
 import norbsoft.sia01.domain.impl.Instrumentalist;
-import norbsoft.sia01.domain.impl.PoorPerformer;
 import norbsoft.sia01.domain.impl.Stage;
 import norbsoft.sia01.domain.impl.Ticket;
 import org.springframework.context.ApplicationContext;
@@ -25,7 +25,8 @@ public class Application {
 //		// JAVA only config
 //		domainStatic(new AnnotationConfigApplicationContext(Config.class));
 
-		domainStatic(new ClassPathXmlApplicationContext("AspectConfig.xml"));
+//		domainStatic(new ClassPathXmlApplicationContext("AspectConfig.xml"));
+		interceptMind();
 	}
 
 	private static void domainStatic(ApplicationContext context) {
@@ -113,5 +114,12 @@ public class Application {
 		} catch (PerformanceException e) {
 			e.printStackTrace();
 		}
+	}
+
+	private static void interceptMind() {
+
+		ApplicationContext context = new ClassPathXmlApplicationContext("AspectConfig.xml");
+		ThinkingCreature creature = (ThinkingCreature) context.getBean("thinkingPerson");
+		creature.thinkOf("Big blue sky...");
 	}
 }
