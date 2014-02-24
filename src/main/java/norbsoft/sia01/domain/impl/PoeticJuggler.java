@@ -10,12 +10,12 @@ public class PoeticJuggler extends Juggler {
 
 	Poem poem;
 
-	PoeticJuggler(int beanBags) {
+	public PoeticJuggler(int beanBags) {
 
 		super(beanBags);
 	}
 
-	PoeticJuggler(int beanBags, Poem poem) {
+	public PoeticJuggler(int beanBags, Poem poem) {
 
 		super(beanBags);
 		this.poem = poem;

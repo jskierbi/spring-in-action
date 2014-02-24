@@ -5,6 +5,7 @@ import norbsoft.sia01.domain.Performer;
 import norbsoft.sia01.domain.TicketAlreadyValidatedException;
 import norbsoft.sia01.domain.impl.*;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Application {
@@ -13,12 +14,18 @@ public class Application {
 
 		// domainStatic();
 		// domainSpel();
-		annotationConfig();
+		//annotationConfig();
+
+		// XML based config
+		domainStatic(new ClassPathXmlApplicationContext("SpringConfig.xml"));
+		// XML entrypoint, class based config
+		domainStatic(new ClassPathXmlApplicationContext("AnnotationConfig.xml"));
+		// JAVA only config
+		domainStatic(new AnnotationConfigApplicationContext(Config.class));
 	}
 
-	private static void domainStatic() {
+	private static void domainStatic(ApplicationContext context) {
 
-		ApplicationContext context = new ClassPathXmlApplicationContext("SpringConfig.xml");
 		Performer performer = (Performer) context.getBean("duke");
 		Performer poemPerformer = (Performer) context.getBean("poeticDuke");
 		Performer poemPerformer2 = (Performer) context.getBean("poeticDuke2");
@@ -33,8 +40,8 @@ public class Application {
 
 		System.out.println("Ticket validation start...");
 		try {
-			ticket2.validateTicket();
 			ticket1.validateTicket();
+			ticket2.validateTicket();
 		} catch (TicketAlreadyValidatedException e) {
 			System.out.println(">> WARNING: Ticket validation problem...");
 		} finally {

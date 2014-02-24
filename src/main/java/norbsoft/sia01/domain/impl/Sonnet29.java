@@ -1,7 +1,9 @@
 package norbsoft.sia01.domain.impl;
 
 import norbsoft.sia01.domain.Poem;
+import org.springframework.stereotype.Component;
 
+@Component("sonnet29")
 public class Sonnet29 implements Poem {
 
 	private static String[] LINES = {

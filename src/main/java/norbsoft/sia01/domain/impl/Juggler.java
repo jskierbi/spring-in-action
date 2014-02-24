@@ -4,7 +4,7 @@ import norbsoft.sia01.domain.PerformanceException;
 import norbsoft.sia01.domain.Performer;
 import org.springframework.stereotype.Component;
 
-@Component("namedJuggler")
+@Component
 public class Juggler implements Performer {
 
 	private int beanBags = 3;
@@ -13,7 +13,7 @@ public class Juggler implements Performer {
 
 	}
 
-	public Juggler (int beanBags) {
+	public Juggler(int beanBags) {
 
 		this.beanBags = beanBags;
 	}

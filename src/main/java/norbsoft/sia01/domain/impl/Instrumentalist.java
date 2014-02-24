@@ -5,18 +5,11 @@ import norbsoft.sia01.domain.PerformanceException;
 import norbsoft.sia01.domain.Performer;
 import org.springframework.stereotype.Component;
 
-import javax.inject.Inject;
-import javax.inject.Named;
-
 @Component
 public class Instrumentalist implements Performer {
 
-	@Inject
-	@Named("guitar")
 	private Instrument instrument;
 
-	@Inject
-	@Named("song")
 	private String song;
 
 	@Override public void doPerform() throws PerformanceException {
