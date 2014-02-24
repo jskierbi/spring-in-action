@@ -1,9 +1,6 @@
 package norbsoft.sia01;
 
-import norbsoft.sia01.domain.PerformanceException;
-import norbsoft.sia01.domain.Performer;
-import norbsoft.sia01.domain.ThinkingCreature;
-import norbsoft.sia01.domain.TicketAlreadyValidatedException;
+import norbsoft.sia01.domain.*;
 import norbsoft.sia01.domain.impl.Instrumentalist;
 import norbsoft.sia01.domain.impl.Stage;
 import norbsoft.sia01.domain.impl.Ticket;
@@ -121,5 +118,7 @@ public class Application {
 		ApplicationContext context = new ClassPathXmlApplicationContext("AspectConfig.xml");
 		ThinkingCreature creature = (ThinkingCreature) context.getBean("thinkingPerson");
 		creature.thinkOf("Big blue sky...");
+		IntroducedInterface introduced = (IntroducedInterface) context.getBean("thinkingPerson");
+		System.out.println("Introduced: " + introduced.getValueFromIntroducedMethod());
 	}
 }

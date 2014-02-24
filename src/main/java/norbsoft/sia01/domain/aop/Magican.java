@@ -1,13 +1,20 @@
 package norbsoft.sia01.domain.aop;
 
+import norbsoft.sia01.domain.IntroducedInterface;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.DeclareParents;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
 @Component
 @Aspect
 public class Magican {
+
+	@DeclareParents(
+			value = "norbsoft.sia01.domain.ThinkingCreature+", // classes that are instaceof ThinkingCreature will be introduced
+			defaultImpl = IntroducedImpl.class) //Which implementaiton to introduce
+	public static IntroducedInterface introducedInterface; // Which interface will be introduced
 
 	@Pointcut("execution(* norbsoft.sia01.domain.ThinkingCreature.thinkOf(String))" +
 			"&& args(thoughts)")
