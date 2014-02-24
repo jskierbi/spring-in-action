@@ -11,7 +11,6 @@
     <context:component-scan base-package="norbsoft.sia01"/>
 
     <!-- Bean declarations go here -->
-
     <aop:config>
         <aop:aspect ref="audience">
 
@@ -19,25 +18,21 @@
                     id="performace"
                     expression="execution(* norbsoft.sia01.domain.Performer.doPerform(..))"/>
 
-            <aop:around
-                pointcut-ref="performace"
-                method="watchPerformance"/>
+            <aop:before
+                    pointcut-ref="performace"
+                    method="takeSeats"/>
 
-            <!--<aop:before-->
-                    <!--pointcut-ref="performace"-->
-                    <!--method="takeSeats"/>-->
+            <aop:before
+                    pointcut-ref="performace"
+                    method="turnOffCellPhones"/>
 
-            <!--<aop:before-->
-                    <!--pointcut-ref="performace"-->
-                    <!--method="turnOffCellPhones"/>-->
+            <aop:after-returning
+                    pointcut-ref="performace"
+                    method="applaud"/>
 
-            <!--<aop:after-returning-->
-                    <!--pointcut-ref="performace"-->
-                    <!--method="applaud"/>-->
-
-            <!--<aop:after-throwing-->
-                    <!--pointcut-ref="performace"-->
-                    <!--method="demandRefund"/>-->
+            <aop:after-throwing
+                    pointcut-ref="performace"
+                    method="demandRefund"/>
 
         </aop:aspect>
     </aop:config>

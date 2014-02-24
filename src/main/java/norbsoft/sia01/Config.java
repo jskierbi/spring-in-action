@@ -16,7 +16,7 @@ import java.util.Properties;
 public class Config {
 
 	@Bean
-	public Poem sonnet29() {
+	public Poem sonnet29Cfg() {
 
 		return new Sonnet29();
 	}
@@ -36,7 +36,7 @@ public class Config {
 	@Bean
 	public Performer poeticDuke2() {
 
-		return new PoeticJuggler(12, sonnet29());
+		return new PoeticJuggler(12, sonnet29Cfg());
 	}
 
 	@Bean
@@ -65,7 +65,7 @@ public class Config {
 	}
 
 	@Bean
-	public Instrument guitar() {
+	public Instrument guitarCfg() {
 
 		return new Guitar();
 	}
@@ -86,7 +86,7 @@ public class Config {
 		band.setInstrumentCollection(new ArrayList<Instrument>(){{
 			add(saxophone());
 			add(piano());
-			add(guitar());
+			add(guitarCfg());
 		}});
 
 		return band;
@@ -99,7 +99,7 @@ public class Config {
 		band.setInstrumentMap(new HashMap<String, Instrument>(){{
 			put("Saxo", saxophone());
 			put("Piano", piano());
-			put("Guitar", guitar());
+			put("Guitar", guitarCfg());
 		}});
 
 		return band;

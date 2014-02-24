@@ -11,10 +11,9 @@ repositories {
 }
 
 dependencies {
-    compile "org.springframework:spring-beans:${springVersion}"
-    compile "org.springframework:spring-context:${springVersion}"
-    compile "org.springframework:spring-core:${springVersion}"
-    compile "org.springframework:spring-expression:${springVersion}"
-    compile "javax.inject:javax.inject:1"
+    compile "org.springframework:spring-core:${springVersion}"      // Spring core
+    compile "org.springframework:spring-context:${springVersion}"   // Autodiscovery annotations? @Component?
+    compile "org.springframework:spring-aspects:${springVersion}"   // Aspects dependency
+    compile "javax.inject:javax.inject:1"                           // JSR330 annotation support
     testCompile "junit:junit:4.11"
 }

@@ -3,9 +3,11 @@ package norbsoft.sia01;
 import norbsoft.sia01.domain.PerformanceException;
 import norbsoft.sia01.domain.Performer;
 import norbsoft.sia01.domain.TicketAlreadyValidatedException;
-import norbsoft.sia01.domain.impl.*;
+import norbsoft.sia01.domain.impl.Instrumentalist;
+import norbsoft.sia01.domain.impl.PoorPerformer;
+import norbsoft.sia01.domain.impl.Stage;
+import norbsoft.sia01.domain.impl.Ticket;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Application {
@@ -16,12 +18,14 @@ public class Application {
 		// domainSpel();
 		//annotationConfig();
 
-		// XML based config
-		domainStatic(new ClassPathXmlApplicationContext("SpringConfig.xml"));
-		// XML entrypoint, class based config
-		domainStatic(new ClassPathXmlApplicationContext("AnnotationConfig.xml"));
-		// JAVA only config
-		domainStatic(new AnnotationConfigApplicationContext(Config.class));
+//		// XML based config
+//		domainStatic(new ClassPathXmlApplicationContext("SpringConfig.xml"));
+//		// XML entrypoint, class based config
+//		domainStatic(new ClassPathXmlApplicationContext("AnnotationConfig.xml"));
+//		// JAVA only config
+//		domainStatic(new AnnotationConfigApplicationContext(Config.class));
+
+		domainStatic(new ClassPathXmlApplicationContext("AspectConfig.xml"));
 	}
 
 	private static void domainStatic(ApplicationContext context) {
@@ -33,6 +37,7 @@ public class Application {
 		Performer multiInstrumentalist = (Performer) context.getBean("hank");
 		Performer hankMap = (Performer) context.getBean("hankMap");
 		Performer propPerf = (Performer) context.getBean("propsPerformer");
+		Performer poorPerformer = (Performer) context.getBean("poorPerformer");
 		Stage stage = (Stage) context.getBean("theStage");
 
 		Ticket ticket1 = (Ticket) context.getBean("ticket");
@@ -57,9 +62,11 @@ public class Application {
 			multiInstrumentalist.doPerform();
 			hankMap.doPerform();
 			propPerf.doPerform();
-			stage.curtainsDown();
+			poorPerformer.doPerform();
 		} catch (PerformanceException e) {
 			e.printStackTrace();
+		} finally {
+			stage.curtainsDown();
 		}
 	}
 

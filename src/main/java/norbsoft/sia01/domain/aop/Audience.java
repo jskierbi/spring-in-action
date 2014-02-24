@@ -1,8 +1,9 @@
 package norbsoft.sia01.domain.aop;
 
-/**
- * Created by jakub on 02/24/2014.
- */
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.springframework.stereotype.Component;
+
+@Component("audience")
 public class Audience {
 
 	public void takeSeats() {
@@ -25,4 +26,15 @@ public class Audience {
 		System.out.println("Boo! We want our money back!");
 	}
 
+	public void watchPerformance(ProceedingJoinPoint jointPoint) {
+
+		try {
+			takeSeats();
+			turnOffCellPhones();
+			jointPoint.proceed();
+			applaud();
+		} catch (Throwable t) {
+			demandRefund();
+		}
+	}
 }
