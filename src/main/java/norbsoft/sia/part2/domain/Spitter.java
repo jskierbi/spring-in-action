@@ -2,10 +2,12 @@ package norbsoft.sia.part2.domain;
 
 public class Spitter {
 
+	private long id;
 	private String username;
 	private String password;
 	private String fullName;
-	private long id;
+	private String email;
+	private boolean isUpdatedByEmail;
 
 	public String getUsername() {
 
@@ -45,5 +47,25 @@ public class Spitter {
 	public void setId(long id) {
 
 		this.id = id;
+	}
+
+	public String getEmail() {
+
+		return email;
+	}
+
+	public void setEmail(String email) {
+
+		this.email = email;
+	}
+
+	public boolean isUpdatedByEmail() {
+
+		return isUpdatedByEmail;
+	}
+
+	public void setUpdatedByEmail(boolean isUpdatedByEmail) {
+
+		this.isUpdatedByEmail = isUpdatedByEmail;
 	}
 }

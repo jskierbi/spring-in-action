@@ -4,6 +4,7 @@ import org.apache.commons.dbcp.BasicDataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 
 @Configuration
 public class DBConfig {
@@ -36,10 +37,17 @@ public class DBConfig {
 	}
 
 	@Bean
+	public NamedParameterJdbcTemplate namedParameterJdbcTemplate() {
+
+		return new NamedParameterJdbcTemplate(localhostDataSource());
+	}
+
+	@Bean // method name is bean name :)
 	public SpitterDAO jdbcSpitterDAO() {
 
 		JdbcSpitterDAO dao = new JdbcSpitterDAO();
 		dao.setJdbcTemplate(jdbcTemplate());
+		dao.setNamedParameterJdbcTemplate(namedParameterJdbcTemplate());
 		return dao;
 	}
 }
