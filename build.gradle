@@ -5,6 +5,8 @@ mainClassName = 'norbsoft.sia.Application';
 version = '1.0'
 
 def springVersion = '4.0.2.RELEASE'
+def springJPAVersion = '1.5.0.RELEASE'
+def hibernateVersion = '4.3.1.Final'
 
 repositories {
     mavenCentral()
@@ -16,10 +18,30 @@ dependencies {
     compile "org.springframework:spring-aspects:${springVersion}"   // Aspects dependency (with AspectJ dependencies inside)
     compile "javax.inject:javax.inject:1"                           // JSR330 annotation support
 
-    // Data access
+    // Data access (JDBC)
     compile "commons-dbcp:commons-dbcp:1.2.2"           // DBCP (DB datasource with connection pooling)
     compile "org.postgresql:postgresql:9.3-1100-jdbc41" // PostgreSQL JDBC driver
     compile "org.springframework:spring-jdbc:${springVersion}" // Spring JDBC
 
+    // JPA implementation - hibernate all-in-one dependency
+    compile "org.hibernate:hibernate-entitymanager:${hibernateVersion}"
+
+    // Spring JPA - not an JPA implementation, as it turns out...
+//    compile "org.springframework:spring-orm:${springVersion}"
+//    compile "org.springframework.data:spring-data-jpa:${springJPAVersion}"
+
     testCompile "junit:junit:4.11"
 }
+
+//<dependencies>
+//<dependency>
+//<groupId>org.hibernate.java-persistence</groupId>
+//    <artifactId>jpa-api</artifactId>
+//<version>2.0-cr-1</version>
+//  </dependency>
+//<dependency>
+//<groupId>org.hibernate</groupId>
+//    <artifactId>hibernate-entitymanager</artifactId>
+//<version>3.5.0-Beta-2</version>
+//  </dependency>
+//</dependencies>
