@@ -19,6 +19,7 @@ dependencies {
     // Data access
     compile "commons-dbcp:commons-dbcp:1.2.2"           // DBCP (DB datasource with connection pooling)
     compile "org.postgresql:postgresql:9.3-1100-jdbc41" // PostgreSQL JDBC driver
+    compile "org.springframework:spring-jdbc:${springVersion}" // Spring JDBC
 
     testCompile "junit:junit:4.11"
 }
