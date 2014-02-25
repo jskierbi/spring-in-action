@@ -1,7 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-mainClassName = 'norbsoft.sia01.Application';
+mainClassName = 'norbsoft.sia.Application';
 version = '1.0'
 
 def springVersion = '4.0.2.RELEASE'
@@ -12,8 +12,13 @@ repositories {
 
 dependencies {
     compile "org.springframework:spring-core:${springVersion}"      // Spring core
-    compile "org.springframework:spring-context:${springVersion}"   // Autodiscovery annotations? @Component?
-    compile "org.springframework:spring-aspects:${springVersion}"   // Aspects dependency
+    compile "org.springframework:spring-context:${springVersion}"   // Here resides "component-scan" and component annotations
+    compile "org.springframework:spring-aspects:${springVersion}"   // Aspects dependency (with AspectJ dependencies inside)
     compile "javax.inject:javax.inject:1"                           // JSR330 annotation support
+
+    // Data access
+    compile "commons-dbcp:commons-dbcp:1.2.2"           // DBCP (DB datasource with connection pooling)
+    compile "org.postgresql:postgresql:9.3-1100-jdbc41" // PostgreSQL JDBC driver
+
     testCompile "junit:junit:4.11"
 }

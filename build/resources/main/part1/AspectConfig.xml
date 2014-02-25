@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <context:component-scan base-package="norbsoft.sia"/>
+    <aop:aspectj-autoproxy/>
+
+    <!-- Bean declarations go here -->
+
+    <!--<aop:config>-->
+        <!--<aop:aspect ref="audience">-->
+
+            <!--<aop:pointcut-->
+                    <!--id="performace"-->
+                    <!--expression="execution(* norbsoft.siaoretutorialtorial.Performer.doPerform(..))"/>-->
+
+            <!--<aop:around-->
+                    <!--pointcut-ref="performace"-->
+                    <!--method="watchPerformance"/>-->
+
+            <!--<aop:before-->
+            <!--pointcut-ref="performace"-->
+            <!--method="takeSeats"/>-->
+
+            <!--<aop:before-->
+            <!--pointcut-ref="performace"-->
+            <!--method="turnOffCellPhones"/>-->
+
+            <!--<aop:after-returning-->
+            <!--pointcut-ref="performace"-->
+            <!--method="applaud"/>-->
+
+            <!--<aop:after-throwing-->
+            <!--pointcut-ref="performace"-->
+            <!--method="demandRefund"/>-->
+
+        <!--</aop:aspect>-->
+    <!--</aop:config>-->
+
+    <!--<aop:config>-->
+        <!--<aop:aspect ref="magican">-->
+
+            <!--<aop:pointcut-->
+                    <!--id="thinking"-->
+                    <!--expression="execution(* norbsoft.siaoretutorialtorial.ThinkingCreature.thinkOf(String))-->
+                                <!--and args(thoughts)"/>-->
+
+            <!--<aop:after-->
+                    <!--pointcut-ref="thinking"-->
+                    <!--method="readThoughts"-->
+                    <!--arg-names="thoughts"/>-->
+
+        <!--</aop:aspect>-->
+    <!--</aop:config>-->
+
+</beans>

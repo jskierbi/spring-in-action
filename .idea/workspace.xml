@@ -68,7 +68,37 @@
     <favorites_list name="spring-in-action-1" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Application.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Part1Main.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/Part1Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="42" selection-start="2322" selection-end="2322" vertical-scroll-proportion="1.5114504" vertical-offset="0" max-vertical-offset="1995">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -107,7 +137,7 @@
               <option name="externalSystemIdString" value="GRADLE" />
               <option name="taskNames">
                 <list>
-                  <option value="clean" />
+                  <option value="build" />
                 </list>
               </option>
             </ExternalSystemSettings>
@@ -121,7 +151,7 @@
               <option name="externalSystemIdString" value="GRADLE" />
               <option name="taskNames">
                 <list>
-                  <option value="build" />
+                  <option value="clean" />
                 </list>
               </option>
             </ExternalSystemSettings>
@@ -275,7 +305,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="1393275481000" />
+        <entry key="$PROJECT_DIR$" value="1393338968000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -352,7 +382,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia01/MessageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia01/MessagePrinter.java" />
         <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia01/Performer.java" />
         <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia01/PerformanceException.java" />
@@ -383,7 +412,6 @@
         <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/PoeticJuggler.java" />
         <option value="$PROJECT_DIR$/src/main/resources/AnnotationConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/Instrumentalist.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/Performer.java" />
         <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/PoorPerformer.java" />
         <option value="$PROJECT_DIR$/src/main/resources/SpringConfig.xml" />
@@ -397,7 +425,14 @@
         <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/IntroducedInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/aop/IntroducedImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/aop/Magican.java" />
+        <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/Poem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia01/DBConfig.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia01/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/Part1Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia/Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia/DBConfig.java" />
       </list>
     </option>
   </component>
@@ -405,8 +440,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -434,20 +469,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-in-action-1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-in-action-1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -486,6 +507,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="part1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -589,7 +614,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sia01" />
+              <option name="myItemId" value="part1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -613,6 +638,46 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-in-action-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-in-action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-in-action-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-in-action-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -647,11 +712,13 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="norbsoft.sia01" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="norbsoft.sia01.domain" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/part1" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="norbsoft.sia.part1.domain" />
+      <recent name="norbsoft.sia01.domain" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.spring-in-action-1 [run]">
@@ -799,19 +866,6 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -837,6 +891,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -902,8 +969,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Gradle.spring-in-action-1 [run]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.spring-in-action-1 [clean]" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.spring-in-action-1 [build]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.spring-in-action-1 [build]" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.spring-in-action-1 [clean]" />
         <item index="3" class="java.lang.String" itemvalue="Gradle.spring-in-action [jar]" />
         <item index="4" class="java.lang.String" itemvalue="Gradle.spring-in-action-1 [check]" />
       </list>
@@ -923,33 +990,33 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32572114" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3250988" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52964425" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908162" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17095852" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17092651" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.6323319" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22031474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52884614" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21991481" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5286561" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52964425" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -973,28 +1040,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="1" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/Juggler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/Application.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="5" selection-start="1882" selection-end="1882" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1635">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/Instrumentalist.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/impl/Instrumentalist.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="660">
           <folding>
@@ -1004,14 +1057,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/AnnotationConfig.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/part1/AnnotationConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="53" selection-start="675" selection-end="675" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="330">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/Guitar.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/impl/Guitar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="5" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="285">
           <folding>
@@ -1027,116 +1080,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/Juggler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/impl/Juggler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="465">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/PerformanceException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/PerformanceException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="1" selection-start="123" selection-end="123" vertical-scroll-proportion="0.12278308" vertical-offset="0" max-vertical-offset="733">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/Poem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="1" selection-start="74" selection-end="74" vertical-scroll-proportion="0.09920635" vertical-offset="0" max-vertical-offset="756" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/TicketAlreadyValidatedException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/TicketAlreadyValidatedException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.03968254" vertical-offset="0" max-vertical-offset="756" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/Stage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/impl/Stage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="52" selection-start="373" selection-end="373" vertical-scroll-proportion="0.41666666" vertical-offset="0" max-vertical-offset="756" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/Ticket.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/impl/Ticket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="16" selection-start="104" selection-end="104" vertical-scroll-proportion="0.11904762" vertical-offset="0" max-vertical-offset="756" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/Saxophone.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/impl/Saxophone.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.01984127" vertical-offset="0" max-vertical-offset="756">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/OneManBandMapBased.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="61" selection-end="61" vertical-scroll-proportion="0.05597015" vertical-offset="0" max-vertical-offset="804">
-          <folding>
-            <element signature="e#600#601#0" expanded="false" />
-            <element signature="e#642#643#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/OneManBand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/impl/OneManBand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="47" selection-start="409" selection-end="409" vertical-scroll-proportion="0.29850745" vertical-offset="0" max-vertical-offset="804">
           <folding>
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/PropertiesPerformer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/impl/PropertiesPerformer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="54" selection-start="493" selection-end="493" vertical-scroll-proportion="0.3544776" vertical-offset="0" max-vertical-offset="804" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/Instrument.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/Instrument.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="16" selection-start="76" selection-end="76" vertical-scroll-proportion="0.07462686" vertical-offset="0" max-vertical-offset="804">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/Piano.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/impl/Piano.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="315" selection-end="315" vertical-scroll-proportion="0.33582088" vertical-offset="0" max-vertical-offset="804">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/City.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/impl/City.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="0.13059701" vertical-offset="0" max-vertical-offset="804" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/SongSelector.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/SongSelector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="96" selection-end="96" vertical-scroll-proportion="0.1119403" vertical-offset="0" max-vertical-offset="804" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/RockSongSelector.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/impl/RockSongSelector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="57" selection-start="220" selection-end="220" vertical-scroll-proportion="0.13059701" vertical-offset="0" max-vertical-offset="804" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/SpelConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="34" selection-start="1708" selection-end="1708" vertical-scroll-proportion="0.8229426" vertical-offset="0" max-vertical-offset="1125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/Juggler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/impl/Juggler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="4" selection-start="288" selection-end="288" vertical-scroll-proportion="0.19817074" vertical-offset="0" max-vertical-offset="984">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/PoeticJuggler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/impl/PoeticJuggler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="11" selection-start="296" selection-end="296" vertical-scroll-proportion="0.24390244" vertical-offset="0" max-vertical-offset="984">
           <folding />
@@ -1158,45 +1189,21 @@
         <state line="16" column="72" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.24716787" vertical-offset="0" max-vertical-offset="971" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="96" selection-start="581" selection-end="616" vertical-scroll-proportion="0.24390244" vertical-offset="0" max-vertical-offset="984">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/Performer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/Performer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="31" selection-end="31" vertical-scroll-proportion="0.015243903" vertical-offset="0" max-vertical-offset="984">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/SpringConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="25" selection-start="269" selection-end="269" vertical-scroll-proportion="0.07804371" vertical-offset="0" max-vertical-offset="1365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/Instrumentalist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="243" selection-end="243" vertical-scroll-proportion="0.12195122" vertical-offset="0" max-vertical-offset="984">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#screamSong#0;class#Instrumentalist#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/Sonnet29.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/impl/Sonnet29.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="50" selection-start="303" selection-end="303" vertical-scroll-proportion="0.13719513" vertical-offset="0" max-vertical-offset="984">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/Guitar.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/impl/Guitar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="128" selection-end="138" vertical-scroll-proportion="0.076219514" vertical-offset="0" max-vertical-offset="984">
           <folding>
@@ -1212,13 +1219,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/AnnotationConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="8" selection-start="567" selection-end="567" vertical-scroll-proportion="0.15243903" vertical-offset="0" max-vertical-offset="984">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.0.2.RELEASE/3717b836710b4c82c2d5f3f32817cb0cfc185317/spring-context-4.0.2.RELEASE-sources.jar!/org/springframework/context/annotation/ComponentScan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="18" selection-start="2249" selection-end="2249" vertical-scroll-proportion="0.0052029137" vertical-offset="490" max-vertical-offset="2355" />
@@ -1229,7 +1229,7 @@
         <state line="316" column="22" selection-start="13185" selection-end="13185" vertical-scroll-proportion="0.4817073" vertical-offset="3921" max-vertical-offset="5025" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/ThinkingCreature.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/ThinkingCreature.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="17" selection-start="49" selection-end="49" vertical-scroll-proportion="0.030487806" vertical-offset="0" max-vertical-offset="984">
           <folding />
@@ -1246,7 +1246,7 @@
         <state line="759" column="0" selection-start="29502" selection-end="29502" vertical-scroll-proportion="0.15142277" vertical-offset="9946" max-vertical-offset="17535" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/PoorPerformer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/impl/PoorPerformer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="347" selection-end="347" vertical-scroll-proportion="0.21341464" vertical-offset="0" max-vertical-offset="984">
           <folding>
@@ -1255,68 +1255,136 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/AspectConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="103" selection-start="1916" selection-end="1983" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.7.4/c6eb79f2d6c7efbc7bf7bf2908a18b7beed98e13/aspectjweaver-1.7.4-sources.jar!/org/aspectj/lang/annotation/DeclareParents.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="18" selection-start="841" selection-end="841" vertical-scroll-proportion="0.19206145" vertical-offset="0" max-vertical-offset="781">
-          <folding />
-        </state>
+        <state line="23" column="18" selection-start="841" selection-end="841" vertical-scroll-proportion="0.19206145" vertical-offset="0" max-vertical-offset="781" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="42" selection-start="3198" selection-end="3198" vertical-scroll-proportion="0.38432837" vertical-offset="1026" max-vertical-offset="1875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/impl/ThinkingPerson.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/impl/ThinkingPerson.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.2238806" vertical-offset="0" max-vertical-offset="804">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/aop/Magican.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="667" selection-end="667" vertical-scroll-proportion="0.31716418" vertical-offset="0" max-vertical-offset="804">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/IntroducedInterface.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/IntroducedInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.1119403" vertical-offset="0" max-vertical-offset="804">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/aop/IntroducedImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/aop/IntroducedImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="3" selection-start="129" selection-end="129" vertical-scroll-proportion="0.1119403" vertical-offset="0" max-vertical-offset="804">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/domain/aop/Audience.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/aop/Audience.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="28" selection-start="470" selection-end="470" vertical-scroll-proportion="0.3097015" vertical-offset="66" max-vertical-offset="870">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia01/Config.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/Poem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="23" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1890">
+        <state line="2" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.045801528" vertical-offset="0" max-vertical-offset="655">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/aop/Magican.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="49" selection-start="85" selection-end="85" vertical-scroll-proportion="0.031217482" vertical-offset="0" max-vertical-offset="961">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/impl/Instrumentalist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="315" selection-end="315" vertical-scroll-proportion="0.17169616" vertical-offset="0" max-vertical-offset="961">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#screamSong#0;class#Instrumentalist#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/domain/impl/OneManBandMapBased.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="51" selection-start="409" selection-end="409" vertical-scroll-proportion="0.21852237" vertical-offset="0" max-vertical-offset="961">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/part1/AspectConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="32" selection-start="902" selection-end="902" vertical-scroll-proportion="0.28095734" vertical-offset="0" max-vertical-offset="1005">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/part1/SpringConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="37" selection-start="917" selection-end="917" vertical-scroll-proportion="0.36585367" vertical-offset="0" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/part1/SpelConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="34" selection-start="1744" selection-end="1744" vertical-scroll-proportion="0.6707317" vertical-offset="0" max-vertical-offset="1125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/part1/AnnotationConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="8" selection-start="565" selection-end="565" vertical-scroll-proportion="0.15243903" vertical-offset="0" max-vertical-offset="984">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="30" selection-start="486" selection-end="486" vertical-scroll-proportion="0.18292683" vertical-offset="0" max-vertical-offset="1770">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/DBConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="124" selection-end="124" vertical-scroll-proportion="0.09146342" vertical-offset="0" max-vertical-offset="984">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part1/Part1Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="42" selection-start="2322" selection-end="2322" vertical-scroll-proportion="1.5114504" vertical-offset="0" max-vertical-offset="1995">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
