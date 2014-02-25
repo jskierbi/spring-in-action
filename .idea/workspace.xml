@@ -69,12 +69,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JdbcSpitterDAO.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="JdbcSpitterDAO.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part2/db/JdbcSpitterDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="0" selection-start="2773" selection-end="2773" vertical-scroll-proportion="1.0189633" vertical-offset="64" max-vertical-offset="1095">
+            <state line="34" column="54" selection-start="1581" selection-end="1581" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
               <folding>
-                <element signature="e#1608#1624#0" expanded="true" />
+                <element signature="e#1967#1968#0" expanded="true" />
+                <element signature="e#2152#2611#0" expanded="true" />
+                <element signature="e#2604#2605#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,10 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBConfig.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DBConfig.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part2/db/DBConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="9" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="825">
+            <state line="49" column="87" selection-start="1482" selection-end="1482" vertical-scroll-proportion="1.252809" vertical-offset="6" max-vertical-offset="825">
               <folding />
             </state>
           </provider>
@@ -434,8 +436,8 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia/part2/domain/Spitter.java" />
         <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia/part2/Part2Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia/part2/db/DBConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia/part2/db/JdbcSpitterDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/norbsoft/sia/part2/db/DBConfig.java" />
       </list>
     </option>
   </component>
@@ -1037,13 +1039,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32451922" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32451922" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908162" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1174,13 +1176,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part2/db/DBConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="9" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part2/Part2Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="58" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
@@ -1188,12 +1183,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.0.2.RELEASE/7dd3f58486b4cc57ea9c11236d946e87a566ab5f/spring-jdbc-4.0.2.RELEASE-sources.jar!/org/springframework/jdbc/core/namedparam/MapSqlParameterSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="11" selection-start="2347" selection-end="2347" vertical-scroll-proportion="0.33333334" vertical-offset="512" max-vertical-offset="2280">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/src.zip!/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="17" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.33333334" vertical-offset="242" max-vertical-offset="18045">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part2/db/JdbcSpitterDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="2773" selection-end="2773" vertical-scroll-proportion="1.0189633" vertical-offset="64" max-vertical-offset="1095">
+        <state line="34" column="54" selection-start="1581" selection-end="1581" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
           <folding>
-            <element signature="e#1608#1624#0" expanded="true" />
+            <element signature="e#1967#1968#0" expanded="true" />
+            <element signature="e#2152#2611#0" expanded="true" />
+            <element signature="e#2604#2605#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/norbsoft/sia/part2/db/DBConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="87" selection-start="1482" selection-end="1482" vertical-scroll-proportion="1.252809" vertical-offset="6" max-vertical-offset="825">
+          <folding />
         </state>
       </provider>
     </entry>

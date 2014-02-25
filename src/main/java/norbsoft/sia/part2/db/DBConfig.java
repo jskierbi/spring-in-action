@@ -46,8 +46,8 @@ public class DBConfig {
 	public SpitterDAO jdbcSpitterDAO() {
 
 		JdbcSpitterDAO dao = new JdbcSpitterDAO();
-		dao.setJdbcTemplate(jdbcTemplate());
-		dao.setNamedParameterJdbcTemplate(namedParameterJdbcTemplate());
+		// dao.setJdbcTemplate(jdbcTemplate());
+		dao.setDataSource(localhostDataSource()); //now has JdbcTemplate created inside
 		return dao;
 	}
 }
