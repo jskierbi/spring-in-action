@@ -18,13 +18,20 @@ dependencies {
     compile "org.springframework:spring-aspects:${springVersion}"   // Aspects dependency (with AspectJ dependencies inside)
     compile "javax.inject:javax.inject:1"                           // JSR330 annotation support
 
-    // Data access (JDBC)
+////// PERSISTANCE ////////////////////////
+    // Data access - common (JPA & JDBC access)
     compile "commons-dbcp:commons-dbcp:1.2.2"           // DBCP (DB datasource with connection pooling)
     compile "org.postgresql:postgresql:9.3-1100-jdbc41" // PostgreSQL JDBC driver
-    compile "org.springframework:spring-jdbc:${springVersion}" // Spring JDBC
 
-    // JPA implementation - hibernate all-in-one dependency
+    // Data access - JDBC template
+    compile "org.springframework:spring-jdbc:${springVersion}" // Spring JDBC templates, probably not needed in JPA
+
+    // JPA spring dependency
+    compile "org.springframework:spring-orm:${springVersion}" // JPA spring manager
+    // JPA implementation - hibernate all in one
     compile "org.hibernate:hibernate-entitymanager:${hibernateVersion}"
+
+////// PERSISTANCE END ////////////////////
 
     // Spring JPA - not an JPA implementation, as it turns out...
 //    compile "org.springframework:spring-orm:${springVersion}"

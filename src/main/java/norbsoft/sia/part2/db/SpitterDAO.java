@@ -2,7 +2,7 @@ package norbsoft.sia.part2.db;
 
 import norbsoft.sia.part2.domain.Spitter;
 
-public interface SpitterDAO {
+public interface SpitterDao {
 
 	public void addSpitter(Spitter spitter);
 

@@ -1,12 +1,20 @@
 package norbsoft.sia.part2.domain;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity(name = "spitter")
 public class Spitter {
 
+	@Id
 	private long id;
 	private String username;
 	private String password;
+	@Column(name = "fullname")
 	private String fullName;
 	private String email;
+	@Column(name = "is_updated_by_email")
 	private boolean isUpdatedByEmail;
 
 	public String getUsername() {

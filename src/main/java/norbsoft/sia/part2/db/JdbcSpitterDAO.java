@@ -1,10 +1,7 @@
 package norbsoft.sia.part2.db;
 
 import norbsoft.sia.part2.domain.Spitter;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
-import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
-import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.simple.ParameterizedRowMapper;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
@@ -14,10 +11,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.HashMap;
-import java.util.Map;
 
-public class JdbcSpitterDAO extends JdbcDaoSupport implements SpitterDAO {
+public class JdbcSpitterDao extends JdbcDaoSupport implements SpitterDao {
 
 	private static final String SQL_INSERT_SPITTER =
 			"insert into spitter (username, password, fullname, email, is_updated_by_email) " +

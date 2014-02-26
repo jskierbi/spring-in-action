@@ -7,7 +7,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 
 @Configuration
-public class DBConfig {
+public class JDBCConfig {
 
 	/**
 	 * Localhost DBCP data source definition (with connection pools)
@@ -43,9 +43,9 @@ public class DBConfig {
 	}
 
 	@Bean // method name is bean name :)
-	public SpitterDAO jdbcSpitterDAO() {
+	public SpitterDao jdbcSpitterDAO() {
 
-		JdbcSpitterDAO dao = new JdbcSpitterDAO();
+		JdbcSpitterDao dao = new JdbcSpitterDao();
 		// dao.setJdbcTemplate(jdbcTemplate());
 		dao.setDataSource(localhostDataSource()); //now has JdbcTemplate created inside
 		return dao;
