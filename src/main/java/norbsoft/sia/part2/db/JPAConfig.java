@@ -48,6 +48,7 @@ public class JPAConfig {
 		LocalContainerEntityManagerFactoryBean emf = new LocalContainerEntityManagerFactoryBean();
 		emf.setDataSource(localhostDataSource());
 		emf.setJpaVendorAdapter(hibernateJpaVendorAdapter());
+		emf.setPackagesToScan("norbsoft.sia.part2.domain");
 		return emf;
 	}
 

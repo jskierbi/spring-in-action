@@ -45,10 +45,10 @@ public class Part2Main {
 		System.out.println("Read object: " + readObj.getFullName());
 
 		Spitter newSpitter = new Spitter();
-		newSpitter.setUsername("NextBigThing");
+		newSpitter.setUsername("JPA-inserted-obj");
 		newSpitter.setPassword("kkk");
-		newSpitter.setFullName("N-?>Big-<<THING");
-		newSpitter.setEmail("nbs@mail.com");
+		newSpitter.setFullName("This row was inserted by JPA! Yay!");
+		newSpitter.setEmail("jpa@mail.com");
 		newSpitter.setUpdatedByEmail(false);
 
 		dao.addSpitter(newSpitter);

@@ -22,6 +22,7 @@ public class JpaSpitterDao implements SpitterDao {
 	@Override public void addSpitter(Spitter spitter) {
 
 		em.persist(spitter);
+		//em.flush();
 	}
 
 	@Override public Spitter getSpitterById(long id) {
