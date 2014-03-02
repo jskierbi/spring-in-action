@@ -13,7 +13,9 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor;
 import org.springframework.orm.jpa.vendor.HibernateJpaDialect;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
+import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.transaction.annotation.TransactionManagementConfigurer;
 
 @Configuration
 @ComponentScan("norbsoft.sia.part2")
@@ -53,7 +55,7 @@ public class JPAConfig {
 		LocalContainerEntityManagerFactoryBean emf = new LocalContainerEntityManagerFactoryBean();
 		emf.setDataSource(localhostDataSource());
 		emf.setJpaVendorAdapter(hibernateJpaVendorAdapter());
-		emf.setPackagesToScan("norbsoft.sia.part2.domain");
+		emf.setPackagesToScan("norbsoft.sia.part2");
 		return emf;
 	}
 
@@ -70,7 +72,7 @@ public class JPAConfig {
 	}
 
 	@Bean
-	public JpaTransactionManager transactionManager() {
+	public PlatformTransactionManager jpaTransactionManager() {
 
 		JpaTransactionManager jtm = new JpaTransactionManager();
 		jtm.setEntityManagerFactory(entityManagerFactory().getObject());

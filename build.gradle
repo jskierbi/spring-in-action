@@ -5,8 +5,7 @@ mainClassName = 'norbsoft.sia.Application';
 version = '1.0'
 
 def springVersion = '4.0.2.RELEASE'
-def springJPAVersion = '1.5.0.RELEASE'
-def hibernateVersion = '4.3.1.Final'
+def hibernateVersion = '4.3.3.Final'
 
 repositories {
     mavenCentral()
