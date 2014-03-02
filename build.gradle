@@ -31,12 +31,6 @@ dependencies {
     // JPA implementation - hibernate all in one
     compile "org.hibernate:hibernate-entitymanager:${hibernateVersion}"
 
-////// PERSISTANCE END ////////////////////
-
-    // Spring JPA - not an JPA implementation, as it turns out...
-//    compile "org.springframework:spring-orm:${springVersion}"
-//    compile "org.springframework.data:spring-data-jpa:${springJPAVersion}"
-
     testCompile "junit:junit:4.11"
 }
 

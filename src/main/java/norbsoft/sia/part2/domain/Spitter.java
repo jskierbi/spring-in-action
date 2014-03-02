@@ -1,14 +1,21 @@
 package norbsoft.sia.part2.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity(name = "spitter")
 public class Spitter {
 
 	@Id
+	@SequenceGenerator(
+			name="spitter_id_seq",
+			sequenceName="spitter_id_seq",
+			allocationSize=1)
+	@GeneratedValue(
+			strategy = GenerationType.SEQUENCE,
+			generator="spitter_id_seq")
+	@Column(updatable=false)
 	private long id;
+
 	private String username;
 	private String password;
 	@Column(name = "fullname")

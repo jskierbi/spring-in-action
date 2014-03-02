@@ -19,10 +19,12 @@ public class JpaSpitterDao implements SpitterDao {
 		this.em = em;
 	}
 
-	@Override public void addSpitter(Spitter spitter) {
+	@Override
+	@Transactional
+	public void addSpitter(Spitter spitter) {
 
 		em.persist(spitter);
-		//em.flush();
+		em.flush();
 	}
 
 	@Override public Spitter getSpitterById(long id) {
