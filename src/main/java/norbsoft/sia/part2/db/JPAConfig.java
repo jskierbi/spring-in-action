@@ -6,9 +6,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
+import org.springframework.orm.jpa.JpaDialect;
+import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor;
+import org.springframework.orm.jpa.vendor.HibernateJpaDialect;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
@@ -45,7 +48,7 @@ public class JPAConfig {
 	}
 
 	@Bean
-	public LocalContainerEntityManagerFactoryBean emf() {
+	public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
 
 		LocalContainerEntityManagerFactoryBean emf = new LocalContainerEntityManagerFactoryBean();
 		emf.setDataSource(localhostDataSource());
@@ -64,5 +67,20 @@ public class JPAConfig {
 	public PersistenceExceptionTranslationPostProcessor persistenceExceptionTranslationPostProcessor() {
 
 		return new PersistenceExceptionTranslationPostProcessor();
+	}
+
+	@Bean
+	public JpaTransactionManager transactionManager() {
+
+		JpaTransactionManager jtm = new JpaTransactionManager();
+		jtm.setEntityManagerFactory(entityManagerFactory().getObject());
+		jtm.setJpaDialect(jpaHibernateDialect());
+		return jtm;
+	}
+
+	@Bean
+	public JpaDialect jpaHibernateDialect() {
+
+		return new HibernateJpaDialect();
 	}
 }
